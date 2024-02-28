@@ -13,12 +13,12 @@ Alternatively, you can use Docker to run the application. First, build the Docke
 
 ```bash
 docker build -t task-management-app .
-
+```
 Then, run the Docker container:
 
 ```bash
 docker run -p 5000:5000 task-management-app
-
+```
 
 ## Usage
 
