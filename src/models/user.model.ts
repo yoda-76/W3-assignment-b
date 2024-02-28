@@ -3,6 +3,27 @@ import bcrypt from "bcrypt";
 import config from "config";
 
 
+export type UserSwaggerSchema={
+
+  /**
+   * @openapi
+   * components:
+   *  schemas:
+   *    CreateUserResponse:
+   *      type: object
+   *      properties:
+   *        email:
+   *          type: string
+   *        name:
+   *          type: string
+   *        _id:
+   *          type: string
+   *        createdAt:
+   *          type: string
+   *        updatedAt:
+   *          type: string
+   */
+}
 
 
 export interface UserInput {

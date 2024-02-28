@@ -4,6 +4,7 @@ import config from "config";
 import connect from "./utils/connect";
 import routes from "./routes";
 import verifyUser from "./middleware/verify";
+import swaggerDocs from "./utils/swagger";
 
 const port = config.get<number>("port");
 
@@ -23,4 +24,6 @@ app.listen(port, async () => {
   await connect(); 
 
   routes(app);
+  swaggerDocs(app, port);
+
 });

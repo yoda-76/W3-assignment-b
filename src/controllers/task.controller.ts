@@ -28,7 +28,7 @@ export async function updateTaskHandler(req: Request, res: Response) {
         const change:UpdateTaskInput = req.body.change
 
         const updatedTask= await updateTask({_id:taskId},change)
-        res.status(200).json({message:"task updated"}) 
+        res.status(200).json(updateTask) 
     } catch (error) {
         res.status(500).json({message:"error"}) 
         console.error(error)
