@@ -5,9 +5,19 @@ This is a simple task management application that allows users to register, log 
 ## Installation
 
 1. Clone this repository.
-2. Install the dependencies:
-
+2. Docker
 3. Start the server:
+
+## Docker
+Alternatively, you can use Docker to run the application. First, build the Docker image:
+
+```bash
+docker build -t task-management-app .
+
+Then, run the Docker container:
+
+```bash
+docker run -p 5000:5000 task-management-app
 
 
 ## Usage
