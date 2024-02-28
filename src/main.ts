@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(verifyUser)
 app.use(cors({
-  origin: ["http://127.0.0.1:5174","http://127.0.0.1:5173"],
+  origin: ["http://127.0.0.1:5174","http://127.0.0.1:5173, https://w3-assignment-f.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }))

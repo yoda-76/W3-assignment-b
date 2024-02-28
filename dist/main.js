@@ -14,7 +14,7 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use(verify_1.default);
 app.use((0, cors_1.default)({
-    origin: ["http://127.0.0.1:5174", "http://127.0.0.1:5173"],
+    origin: ["http://127.0.0.1:5174", "http://127.0.0.1:5173, https://w3-assignment-f.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }));
