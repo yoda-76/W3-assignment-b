@@ -14,7 +14,7 @@ export async function createUserSessionHandler(req: Request, res: Response) {
     const user = await validatePassword(req.body);
 
     if (!user) {
-      return res.status(401).send("Invalid email or password");
+      return res.status(203).send("Invalid email or password")
     }
     
     const session = await createSession(user._id, req.get("user-agent") || "");
@@ -36,7 +36,7 @@ export async function deleteSessionHandler(req: Request, res: Response) {
     await updateSession({ _id: sessionId }, { valid: false });
 
     return res.status(200).send("Session deleted");}catch(e){
-      res.status(403).send("Forbidden")
+      res.status(403).send("Unautharised")
 
     }
 }
