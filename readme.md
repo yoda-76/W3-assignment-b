@@ -68,6 +68,7 @@ const response = await fetch(`https://w3-assignment-b.onrender.com/api/task/${ta
             });
 ```
 5. update task:
+
 ```javascript
 
 const response = await fetch(`https://w3-assignment-b.onrender.com/api/task/${e.target.getAttribute("taskid")}`, {
@@ -84,6 +85,7 @@ const response = await fetch(`https://w3-assignment-b.onrender.com/api/task/${e.
 ```
 
 6. get all tasks:
+
 ```javascript
 const response = await fetch("https://w3-assignment-b.onrender.com/api/task", {
                 method: 'GET',
@@ -93,7 +95,7 @@ const response = await fetch("https://w3-assignment-b.onrender.com/api/task", {
                     "access-token":sessionStorage.getItem("access-token")
                 }
             });
-    ```
+ ```
 ## Installation
 
 1. Clone this repository.
