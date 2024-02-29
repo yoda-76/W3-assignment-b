@@ -128,6 +128,11 @@ function routes(app: Express) {
  *     tags:
  *     - task
  *     summary: Create a new task
+ *     requestHeaders:
+ *       required: true
+ *       content:
+ *         access-token:
+ *           type: string
  *     requestBody:
  *       required: true
  *       content:

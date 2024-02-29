@@ -4,6 +4,11 @@ import UserModel, { UserDocument, UserInput } from "../models/user.model";
 
 export async function createUser(input: UserInput) {
   try {
+    const doesUserExist = await UserModel.find({email: input.email})
+    if(doesUserExist[0]){
+      console.log(doesUserExist)
+      return
+    }
     const user = await UserModel.create(input);
 
     return omit(user.toJSON(), "password");
