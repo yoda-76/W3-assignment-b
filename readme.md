@@ -2,6 +2,10 @@
 
 This is a simple task management application that allows users to register, log in, and manage their tasks.
 
+## Frontend repo
+This is the link for the frontend repo for this todo app
+https://github.com/yoda-76/W3-assignment-f/
+
 ## Video
 This is a screen recording of the todo app running locally
 https://www.loom.com/share/420dbdcf739d489cb049a7fdfa1d97a6?sid=c826b8eb-2c2e-47d4-9f71-380f5a099c34
