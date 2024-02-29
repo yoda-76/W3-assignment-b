@@ -8,7 +8,7 @@ https://github.com/yoda-76/W3-assignment-f/
 
 ## Video
 This is a screen recording of the todo app running locally
-https://www.loom.com/share/420dbdcf739d489cb049a7fdfa1d97a6?sid=c826b8eb-2c2e-47d4-9f71-380f5a099c34
+https://www.loom.com/share/ff811363f61b40f5b7b0997c94db1e4c?sid=be88b400-7402-4c85-8bd0-fd6b0f1093cd
 
 
 ## Backend deployed link
